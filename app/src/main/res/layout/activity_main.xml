@@ -17,8 +17,11 @@
         android:layout_height="wrap_content"
         android:text="Clock" />
 
-    <!-- Przycisk -->
-    <!-- BRAK ELEMENTU (1) -->
+    <Button
+        android:id="@+id/action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start/Stop"/>
 
 
     <!-- Calosc miejsca pod przyciskiem zawira kolejne elementy obok siebie (horizontal) -->
@@ -39,20 +42,40 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Last tries" />
+            <LinearLayout
+                android:id="@+id/lastTriesList"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
 
-            <!-- Oraz kolejny layout, tym razem pusty, ktory uzupelniany jest podczas dzialania programu (runtime) -->
-            <!-- BRAK ELEMENTU (2) -->
+            <!-- W tym layoucie umieszczamy prosty text, bedacy naglowkiem -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Best tries" />
+
+            <LinearLayout
+                android:id="@+id/bestTriesList"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </LinearLayout>
 
         </LinearLayout>
 
-        <!-- Drugi element w layoucie pod przyciskiem -->
-        <!-- BRAK ELEMENTU (3) -->
 
-            <!-- Analogicznie, do poprzedniego przypadku umieszczamy  tutaj prosty text, bedacy naglowkiem -->
-            <!-- BRAK ELEMENTU (4) -->
+        <!-- Analogicznie, do poprzedniego przypadku umieszczamy  tutaj prosty text, bedacy naglowkiem -->
+        <!-- BRAK ELEMENTU (4) -->
 
-            <!-- Oraz kolejny layout do uzupelnienia w przez uruchomiony kod java -->
-            <!-- BRAK ELEMENTU (5) -->
+        <!-- Oraz kolejny layout do uzupelnienia w przez uruchomiony kod java -->
+        <!-- BRAK ELEMENTU (5) -->
 
     </LinearLayout>
 
